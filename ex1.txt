@@ -1,0 +1,16 @@
+ÈÑäÇãå Çí ˜å ÇÚÏÇÏ ÑÇ ÎæÇäÏå ÏÑ ÂÑÇíå ĞÎíÑå æ ãÌãæÚ ÑÇ äãÇíÔ ÏåÏ. 
+
+ System.out.print("Enter length of array:");
+        int length,j,sum=0;
+           Scanner sc = new Scanner(System.in);
+           length=sc.nextInt();
+           int[] intArray = new int[length];
+           System.out.println("Enter namber:");
+        for(j=0;j<length;j++)
+         {
+           intArray[j] = sc.nextInt();
+           System.out.print(String.format("[%d]:", j));
+           System.out.println(intArray[j]);
+           sum+=intArray[j];
+         }
+    System.out.println(String.format("Sum of Array:%d", sum));
